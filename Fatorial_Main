@@ -1,0 +1,13 @@
+package fatorial;
+
+public class FatorialMain {
+	public static void main(String[] args) {
+	
+	final int FINISH = 13;
+	Fatorial fatorial = new Fatorial(FINISH);
+	do{
+		Integer element = fatorial.next();
+		System.out.println(element);
+	}while(fatorial.hasNext());
+	}
+}
