@@ -1,0 +1,23 @@
+package fatorial;
+
+public class Fatorial{
+	
+  private int current, last;
+	
+	public Fatorial(int last){
+		this.last = last;
+		this.current = 0;
+	}
+	public Integer next(){
+		current++;
+		int result = current;
+		for(int previous = current - 1; previous > 1; previous--){
+			result = result * previous;
+		}
+		return new Integer(result);
+	}   
+
+	public boolean hasNext(){
+		return this.current < this.last;
+	}
+}
