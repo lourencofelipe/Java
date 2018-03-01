@@ -1,0 +1,13 @@
+package ExecExempJava;
+import java.util.Random;
+
+public class GerarNumeros {
+	public static void main(String[] args){
+
+		Random gerador = new Random();
+
+		for(int i = 0; i < 1000; i++){
+			System.out.println(i + " -> " + gerador.nextInt());
+		}
+	}
+}
